@@ -1,0 +1,71 @@
+.likedProducts {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+    vertical-align: middle;
+    margin: 0 20px;
+    width: 27px;
+    height: 30px;
+}
+.likedProducts__count {
+	display: inline-block;
+	font:400 11px/11px 'Pt sans';
+	color:#fff;
+	padding: 1px 5px 0;
+	border-radius: 50px;
+	position: absolute;
+	top:1px;
+	left:20px;
+}
+.likedProducts__heart {
+	padding-top: 3px;
+    width: 27px;
+	height: 24px;
+	box-sizing: content-box;
+
+}
+.likedProducts__tooltip {
+	display: block;
+	color:#fff;
+	font:400 14px/16px 'Pt sans';
+	padding: 4px 16px;
+	border-radius: 50px;
+	position: absolute;
+	left:50%;
+	top:0;
+	transform: translate(-50%,-150%) rotate(15deg);
+	opacity: 0;
+	transform-origin: 50% 230%;
+	transition: all .17s ease;
+}
+.likedProducts__tooltipSvg {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	width:36px;
+	margin: auto;
+}
+
+.likedProducts:hover .likedProducts__tooltip{
+	display: inline-block;
+	transform: translate(-50%,-150%) rotate(0deg);
+	opacity: 1;
+}
+
+.likedProducts__count,
+.likedProducts__tooltip {
+	background: rgba(0,0,0,0.67);
+}
+.likedProducts__tooltipSvg,
+.likedProducts__heart {
+	fill: rgba(0,0,0,0.67);
+}
+
+.search-form {
+	width:37%;
+}
+.n-form-sarch {
+	min-width: auto;
+}
